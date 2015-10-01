@@ -1,5 +1,5 @@
 {
-    "name": "libre-informatique/core-bundle",
+    "name": "libre-informatique/decorator-bundle",
     "type": "symfony-bundle",
     "description": "This is the basis of a GUI for Libre Informatique Symfony2 projects",
     "require": {
