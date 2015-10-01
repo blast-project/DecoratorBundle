@@ -1,0 +1,6 @@
+parameters:
+    librinfo_decorator:
+        templates:
+            layout:
+                original: [SonataAdminBundle::standard_layout.html.twig, LibrinfoCoreBundle::standard_layout.html.twig]
+                modified: LibrinfoDecoratorBundle::layout.html.twig
