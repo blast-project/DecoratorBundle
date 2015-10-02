@@ -35,8 +35,6 @@ class LibrinfoDecoratorExtension extends Extension
                 continue;
             if ( in_array($templates[$key], $change['original']) )
                 $templates[$key] = $change['modified'];
-                
-            echo "$key: ".$change['modified'];
         }
         $container->setParameter('sonata.admin.configuration.templates', $templates);
     }
