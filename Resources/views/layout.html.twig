@@ -46,3 +46,25 @@ class="sonata-bc skin-blue fixed"
 </div>
 
 {% endblock %}
+
+
+{% block logo %}
+    {% spaceless %}
+    <a class="logo" href="{{ url('sonata_admin_dashboard') }}">
+        {% if 'single_image' == admin_pool.getOption('title_mode') or 'both' == admin_pool.getOption('title_mode') %}
+            {% if 'bundles/sonataadmin/logo_title.png' == admin_pool.titlelogo %}
+            <img src="{{ asset('bundles/librinfodecorator/logo-li.png') }}" alt="Libre Informatique">
+            {% else %}
+            <img src="{{ asset(admin_pool.titlelogo) }}" alt="{{ admin_pool.title }}">
+            {% endif %}
+        {% endif %}
+        {% if 'single_text' == admin_pool.getOption('title_mode') or 'both' == admin_pool.getOption('title_mode') %}
+            {% if 'Sonata Admin' == admin_pool.title %}
+            <span>Libre Informatique</span>
+            {% else %}
+            <span>{{ admin_pool.title }}</span>
+            {% endif %}
+        {% endif %}
+    </a>
+    {% endspaceless %}
+{% endblock %}
