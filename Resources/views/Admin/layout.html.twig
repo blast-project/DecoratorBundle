@@ -21,18 +21,14 @@ file that was distributed with this source code.
 
 {% block side_bar_before_nav %}
     {{ parent() }}
-
     {{ showAdminMenu('before') }}
 {% endblock %}
 
 
 {% block side_bar_after_nav %}
-    {{ parent() }}
-
     {{ showAdminMenu('after') }}
+    {{ parent() }}
 {% endblock %}
-
-
 
 {% block sonata_top_nav_menu %}
 
