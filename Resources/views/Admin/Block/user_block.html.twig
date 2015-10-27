@@ -1,0 +1,9 @@
+<div class="thumbnail">
+    <h4>{{ app.user.username }}</h4>
+
+    <div class="panel-body">
+        <a href="{{ path('fos_user_security_logout') }}" class="btn btn-danger">
+            <i class="fa fa-sign-out"></i> {{ 'layout.logout'|trans({},'FOSUserBundle') }}
+        </a>
+    </div>
+</div>
