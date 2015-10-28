@@ -1,7 +1,1 @@
 services:
-    librinfo-decorator.twig.extension.adminMenu:
-        class: Librinfo\DecoratorBundle\Twig\Extension\AdminMenu
-        public: false
-        arguments: [@service_container]
-        tags:
-            - { name: twig.extension }
