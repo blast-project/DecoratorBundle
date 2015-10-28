@@ -14,20 +14,15 @@ file that was distributed with this source code.
 {% extends 'LibrinfoCoreBundle::standard_layout.html.twig' %}
 
 {% block body_attributes %}
-
     class="sonata-bc skin-blue fixed"
-
 {% endblock %}
 
 {% block side_bar_before_nav %}
-    {{ parent() }}
     {{ showAdminMenu('before') }}
 {% endblock %}
 
-
 {% block side_bar_after_nav %}
     {{ showAdminMenu('after') }}
-    {{ parent() }}
 {% endblock %}
 
 {% block sonata_top_nav_menu %}
