@@ -1,0 +1,37 @@
+<html {% block html_attributes %}{% endblock %}>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href="/bundles/sonataadmin/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bundles/sonataadmin/vendor/AdminLTE/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/bundles/sonataadmin/vendor/AdminLTE/css/ionicons.min.css" rel="stylesheet">
+    <link href="/bundles/sonataadmin/vendor/AdminLTE/css/AdminLTE.css" rel="stylesheet">
+    <link href="/bundles/sonataadmin/vendor/select2/select2.css" rel="stylesheet">
+    <link href="/bundles/sonataadmin/vendor/select2/select2-bootstrap.css" rel="stylesheet">
+
+    <link href="/bundles/librinfoui/css/bootstrap-switch.min.css" rel="stylesheet">
+
+
+    <link href="/bundles/librinfocore/css/sonataadmin-edit.css" rel="stylesheet">
+
+    {% block stylesheets %}{% endblock %}
+
+    <script src="/bundles/sonataadmin/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/bundles/sonatacore/vendor/moment/min/moment.min.js"></script>
+    <script src="/bundles/sonataadmin/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/bundles/sonataadmin/vendor/select2/select2.min.js"></script>
+    <script src="/bundles/sonataadmin/vendor/select2/select2_locale_fr.js"></script>
+
+    <script src="/bundles/librinfoui/js/bootstrap-switch.min.js"></script>
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body {% block body_attributes %}class="sonata-bc skin-blue fixed"{% endblock %}>
+
+{% block content %}
+
+{% endblock %}
+
+</body>
+</html>
