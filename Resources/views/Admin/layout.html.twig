@@ -18,13 +18,13 @@ file that was distributed with this source code.
 {% endblock %}
 
 {% block side_bar_before_nav %}
-    {% if isExtensionLoaded('showAdminMenu') %}
+    {% if isFunctionLoaded('showAdminMenu') %}
         {{ showAdminMenu('before') }}
     {% endif %}
 {% endblock %}
 
 {% block side_bar_after_nav %}
-    {% if isExtensionLoaded('showAdminMenu') %}
+    {% if isFunctionLoaded('showAdminMenu') %}
         {{ showAdminMenu('after') }}
     {% endif %}
 {% endblock %}
