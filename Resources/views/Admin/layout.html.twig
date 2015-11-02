@@ -18,11 +18,15 @@ file that was distributed with this source code.
 {% endblock %}
 
 {% block side_bar_before_nav %}
-    {{ showAdminMenu('before') }}
+    {% if isExtensionLoaded('showAdminMenu') %}
+        {{ showAdminMenu('before') }}
+    {% endif %}
 {% endblock %}
 
 {% block side_bar_after_nav %}
-    {{ showAdminMenu('after') }}
+    {% if isExtensionLoaded('showAdminMenu') %}
+        {{ showAdminMenu('after') }}
+    {% endif %}
 {% endblock %}
 
 {% block sonata_top_nav_menu %}
