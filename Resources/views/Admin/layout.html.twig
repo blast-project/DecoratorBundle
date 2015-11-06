@@ -3,7 +3,6 @@
 This file is part of the Libre Informatique DecoratorBundle package.
 
 (c) Baptiste SIMON <baptiste.simon _AT_ libre-informatique.fr>
-(c) Gildas LE MOAL <gildas.lemoal _AT_ libre-informatique.fr>
 (c) Libre Informatique [http://www.libre-informatique.fr/]
 
 For the full copyright and license information, please view the LICENSE
@@ -15,18 +14,6 @@ file that was distributed with this source code.
 
 {% block body_attributes %}
     class="sonata-bc skin-blue fixed"
-{% endblock %}
-
-{% block side_bar_before_nav %}
-    {% if isFunctionLoaded('showAdminMenu') %}
-        {{ showAdminMenu('before') }}
-    {% endif %}
-{% endblock %}
-
-{% block side_bar_after_nav %}
-    {% if isFunctionLoaded('showAdminMenu') %}
-        {{ showAdminMenu('after') }}
-    {% endif %}
 {% endblock %}
 
 {% block sonata_top_nav_menu %}

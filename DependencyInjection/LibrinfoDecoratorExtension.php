@@ -6,6 +6,8 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader;
+use Symfony\Component\Yaml\Yaml;
+use Librinfo\CoreBundle\DependencyInjection\DefaultParameters;
 
 /**
  * This is the class that loads and manages your bundle configuration
@@ -25,6 +27,15 @@ class LibrinfoDecoratorExtension extends Extension
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.yml');
         
+        $configSonataAdmin = Yaml::parse(
+            file_get_contents(__DIR__ . '/../Resources/config/bundles/sonata_admin.yml')
+        );
+
+        DefaultParameters::getInstance($container)
+            ->defineDefaultConfiguration(
+                $configSonataAdmin['default']
+            );
+
 //        $loader->load('decorator.yml');
 
 //        $configSonataAdmin = Yaml::parse(
