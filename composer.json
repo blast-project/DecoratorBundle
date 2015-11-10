@@ -9,7 +9,7 @@
     },
     "require-dev": {
         "libre-informatique/core-bundle": "dev-interfaces_and_traits"
-    }
+    },
     "license":  "GPL-3.0",
     "keywords": ["e-venement", "libio", "sonata", "symfony"],
     "homepage": "https://github.com/libre-informatique/SymfonyLibrinfoCoreBundle",
