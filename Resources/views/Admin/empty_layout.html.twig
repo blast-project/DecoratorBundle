@@ -4,12 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     {% stylesheets
-    'bundles/sonataadmin/vendor/bootstrap/dist/css/bootstrap.min.css'
-    'bundles/sonataadmin/vendor/AdminLTE/css/font-awesome.min.css'
-    'bundles/sonataadmin/vendor/AdminLTE/css/ionicons.min.css'
-    'bundles/sonataadmin/vendor/AdminLTE/css/AdminLTE.css'
-    'bundles/sonataadmin/vendor/select2/select2.css'
-    'bundles/sonataadmin/vendor/select2/select2-bootstrap.css'
+    'bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css'
+    'bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css'
+    'bundles/sonatacore/vendor/ionicons/css/ionicons.min.css'
+    'bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.css'
+    'bundles/sonatacore/vendor/select2/select2.css'
+    'bundles/sonatacore/vendor/select2/select2-bootstrap.css'
     'bundles/librinfoui/css/bootstrap-switch.min.css'
     'bundles/librinfocore/css/sonataadmin-edit.css'
     output='css/empty_layout.css' filter="cssrewrite" %}
@@ -21,10 +21,10 @@
     {% javascripts
     'bundles/sonataadmin/vendor/jquery/dist/jquery.min.js'
     'bundles/sonatacore/vendor/moment/min/moment.min.js'
-    'bundles/sonataadmin/vendor/bootstrap/dist/js/bootstrap.min.js'
-    'bundles/sonataadmin/vendor/select2/select2.min.js'
-    'bundles/sonataadmin/vendor/select2/select2_locale_fr.js'
-        'bundles/librinfoui/js/bootstrap-switch.min.js'
+    'bundles/sonatacore/vendor/bootstrap/dist/js/bootstrap.min.js'
+    'bundles/sonatacore/vendor/select2/select2.min.js'
+    'bundles/sonatacore/vendor/select2/select2_locale_fr.js'
+    'bundles/librinfoui/js/bootstrap-switch.min.js'
     output="js/empty_layout.js" %}
     <script src="{{ asset_url }}"></script>
     {% endjavascripts %}
