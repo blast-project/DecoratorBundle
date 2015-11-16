@@ -9,7 +9,7 @@ default: # see available parameters with command : app/console debug:container -
     sonata_doctrine_orm_admin.templates:
         default:
             form:
-                - LibrinfoCoreBundle:Admin/Form:admin_forms.html.twig
+                - SonataDoctrineORMAdminBundle:Form:form_admin_fields.html.twig
         replace:
             form:
                 - LibrinfoDecoratorBundle:Admin/Form:admin_forms.html.twig
