@@ -31,6 +31,18 @@ Do not forget to configure the LibrinfoCoreBundle. Find examples in the [libre-i
 
 ### Finish
 
+Consider LibrinfoDecoratorBundle an assetic bundle :
+
+```
+# app/config/config.yml
+# ...
+assetic:
+    bundles:
+        # ...
+        - LibrinfoDecoratorBundle
+# ...
+```
+
 Publish the assets :
 
 ```$ app/console assets:install --symlink```
