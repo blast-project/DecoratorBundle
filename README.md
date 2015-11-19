@@ -31,7 +31,7 @@ Do not forget to configure the LibrinfoCoreBundle. Find examples in the [libre-i
 
 ### Finish
 
-Consider LibrinfoDecoratorBundle an assetic bundle :
+Consider ```LibrinfoDecoratorBundle``` an assetic bundle :
 
 ```
 # app/config/config.yml
