@@ -12,6 +12,10 @@ file that was distributed with this source code.
 
 {% extends 'LibrinfoCoreBundle::standard_layout.html.twig' %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('bundles/librinfodecorator/css/skin-blue.css') }}" />
+{% endblock %}
 {% block body_attributes %}
     class="sonata-bc skin-blue fixed"
 {% endblock %}
