@@ -17,7 +17,7 @@ file that was distributed with this source code.
     <link rel="stylesheet" href="{{ asset('bundles/librinfodecorator/css/skin-blue.css') }}" />
 {% endblock %}
 {% block body_attributes %}
-    class="sonata-bc skin-blue fixed"
+    class="{% block body_classes %}sonata-bc skin-blue fixed librinfo{% endblock %}"
 {% endblock %}
 
 {% block sonata_top_nav_menu %}
