@@ -1,7 +1,7 @@
 .skin-blue .navbar {
   background-color: #3c8dbc;
 }
-.skin-blue .navbar .nav a {
+.skin-blue .navbar .nav a:not(.btn-danger) {
   color: rgba(255, 255, 255, 0.8);
 }
 .skin-blue .navbar .btn-group > .btn:not(.dropdown-toggle) {
@@ -146,4 +146,8 @@
 }
 .skin-blue .navbar .dropdown-menu > li > a {
   color: #444;
+}
+
+.skin-blue .breadcrumb li.active, .skin-blue  a.navbar-brand{
+    color: #000
 }
