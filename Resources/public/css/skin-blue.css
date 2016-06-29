@@ -6,7 +6,9 @@
 }
 
 .skin-blue .navbar .nav a.btn-danger{
-    color: #cc0000
+   color: white;
+   background-color: #d9534f;
+   border-color: #d43f3a;
 }
 
 .skin-blue .navbar .btn-group > .btn:not(.dropdown-toggle) {
