@@ -1,9 +1,14 @@
 .skin-blue .navbar {
   background-color: #3c8dbc;
 }
-.skin-blue .navbar .nav a:not(.btn-danger) {
+.skin-blue .navbar .nav a {
   color: rgba(255, 255, 255, 0.8);
 }
+
+.skin-blue .navbar .nav a.btn-danger{
+    color: #cc0000
+}
+
 .skin-blue .navbar .btn-group > .btn:not(.dropdown-toggle) {
   color: #444;
 }
