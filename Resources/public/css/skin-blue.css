@@ -160,7 +160,12 @@
 }
 
 /* Lists */
-
 table.sonata-ba-list thead tr th {
   border-bottom: 1px solid #aaa;
+}
+
+/* remove user dropdown overlapping panels */
+ul.dropdown-user { 
+  border: 0;  
+  background: transparent;
 }
