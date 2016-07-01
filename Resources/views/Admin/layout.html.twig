@@ -16,6 +16,12 @@ file that was distributed with this source code.
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('bundles/librinfodecorator/css/skin-blue.css') }}" />
 {% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('bundles/librinfodecorator/js/inline-block.js') }}"></script>
+{% endblock %}
+
 {% block body_attributes %}
     class="{% block body_classes %}sonata-bc skin-blue fixed librinfo{% endblock %}"
 {% endblock %}
