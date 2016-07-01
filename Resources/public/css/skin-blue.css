@@ -158,3 +158,9 @@
 .skin-blue .breadcrumb li.active, .skin-blue  a.navbar-brand{
     color: #000
 }
+
+/* Lists */
+
+table.sonata-ba-list thead tr th {
+  border-bottom: 1px solid #aaa;
+}
