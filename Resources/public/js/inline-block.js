@@ -1,3 +1,4 @@
+
 if (LI === undefined)
     var LI = {};
 if (LI.decorator === undefined)
@@ -6,7 +7,7 @@ if (LI.decorator === undefined)
 $(document).ready(function () {
 
     LI.decorator.inline();
-    LI.decorator.endLine();
+    LI.decorator.newLine();
 });
 
 // display several sonata form fields on the same line
@@ -14,20 +15,36 @@ LI.decorator.inline = function () {
 
     $('.inline-block').each(function () {
 
-        var width = LI.decorator.getWidget($(this)).attr('width');
+        var widget = LI.decorator.getWidget($(this));
+        var width = widget.attr('width');
+        var height = widget.attr('height');
 
-        LI.decorator.getFormGroup($(this)).css({'display': 'inline-block', 'margin-right': '10px', 'width': width + '%'});
+        LI.decorator.getFormGroup($(this)).css({
+            'display': 'inline-block',
+            'margin-right': '10px',
+            'width': width + '%',
+            'height': height + 'px'
+        });
+
+        $(this).css('height', height + 'px');
     });
 };
 
 // Add line breaks to inline-block fields
-LI.decorator.endLine = function () {
+LI.decorator.newLine = function () {
 
     $('.new-line').each(function () {
 
-        var width = LI.decorator.getWidget($(this)).attr('width');
+        var widget = LI.decorator.getWidget($(this));
+        var width = widget.attr('width');
+        var height = widget.attr('height');
 
-        LI.decorator.getFormGroup($(this)).css({'width': width + '%'});
+        LI.decorator.getFormGroup($(this)).css({
+            'width': width + '%',
+            'height': height + 'px'
+        });
+
+        $(this).css('height', height + 'px');
     });
 };
 
@@ -40,6 +57,7 @@ LI.decorator.getFormGroup = function (field) {
 
         formGroup = field.closest('div.form-group');
     }
+    $(this).css('height', height + 'px');
 
     return formGroup;
 };
@@ -51,7 +69,7 @@ LI.decorator.getWidget = function (field) {
 
         return field.siblings('select');
     } else {
-        
+
         return field;
     }
 };
