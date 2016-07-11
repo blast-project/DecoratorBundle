@@ -20,6 +20,7 @@ LI.decorator.inline = function () {
     });
 };
 
+// Add line breaks to inline-block fields
 LI.decorator.endLine = function () {
 
     $('.new-line').each(function () {
@@ -30,6 +31,7 @@ LI.decorator.endLine = function () {
     });
 };
 
+//check if the field as one or two level form group parent
 LI.decorator.getFormGroup = function (field) {
 
     var formGroup = field.closest('div.form-group').parent().closest('div.form-group');
@@ -42,6 +44,7 @@ LI.decorator.getFormGroup = function (field) {
     return formGroup;
 };
 
+//check what type of widget is being dealt with
 LI.decorator.getWidget = function (field) {
 
     if (field.siblings('select') > 0) {
