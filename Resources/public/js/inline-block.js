@@ -57,7 +57,6 @@ LI.decorator.getFormGroup = function (field) {
 
         formGroup = field.closest('div.form-group');
     }
-    $(this).css('height', height + 'px');
 
     return formGroup;
 };
