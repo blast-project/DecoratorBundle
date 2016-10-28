@@ -213,3 +213,7 @@ ul.dropdown-user {
     top: 50%;
     margin-top: -7px;
 }
+
+.sidebar-menu li.active > a > .fa-angle-left {
+    transform: rotate(-90deg);
+}
