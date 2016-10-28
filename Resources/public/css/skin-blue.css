@@ -183,12 +183,22 @@ ul.dropdown-user {
   -moz-columns: 3;
 }
 
+/* weird fix to align checkboxes */
 .skin-blue .columns-3 li, .skin-blue .columns-2 li {
   padding-top: 1px;
 }
 
 .skin-blue .multiple-checkbox span { 
   font-weight: normal;
+}
+
+/* navbar-collapse links*/
+.skin-blue .breadcrumb li.active, .skin-blue a.navbar-brand {
+  color: #fff;
+}
+
+.skin-blue .breadcrumb li.active:hover, .skin-blue a.navbar-brand:hover {
+  color: #d9d9d9;
 }
 
 
