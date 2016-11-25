@@ -3,7 +3,7 @@
 namespace Librinfo\DecoratorBundle\DependencyInjection;
 
 
-use Librinfo\CoreBundle\DependencyInjection\LibrinfoCoreExtension;
+use Blast\CoreBundle\DependencyInjection\LibrinfoCoreExtension;
 
 /**
  * This is the class that loads and manages your bundle configuration
