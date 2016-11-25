@@ -18,6 +18,10 @@ file that was distributed with this source code.
 {% endblock %}
 
 {% block javascripts %}
+    <script>
+        // cf https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html#adminlte-options
+        var AdminLTEOptions = { animationSpeed: 150 };
+    </script>
     {{ parent() }}
     <script type="text/javascript" src="{{ asset('bundles/librinfodecorator/js/inline-block.js') }}"></script>
 {% endblock %}
