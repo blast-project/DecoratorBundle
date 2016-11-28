@@ -27,7 +27,7 @@ Do not forget to configure the SonataAdminBundle. Find examples in the [libre-in
 
 ### The Libre Informatique bundles
 
-Do not forget to configure the LibrinfoCoreBundle. Find examples in the [libre-informatique/core-bundle](https://github.com/libre-informatique/SymfonyLibrinfoCRMBundle#the-libre-informatique-bundles) documentation.
+Do not forget to configure the BlastCoreBundle. Find examples in the [libre-informatique/core-bundle](https://github.com/libre-informatique/SymfonyLibrinfoCRMBundle#the-libre-informatique-bundles) documentation.
 
 ### Finish
 
@@ -65,7 +65,7 @@ parameters:
     librinfo_decorator:
         templates:
             layout:
-                original: [SonataAdminBundle::standard_layout.html.twig, LibrinfoCoreBundle::standard_layout.html.twig]
+                original: [SonataAdminBundle::standard_layout.html.twig, BlastCoreBundle::standard_layout.html.twig]
                 modified: LibrinfoDecoratorBundle::layout.html.twig
 ```
 
@@ -98,7 +98,7 @@ file that was distributed with this source code.
 
 #}
 
-{% extends 'LibrinfoCoreBundle::standard_layout.html.twig' %}
+{% extends 'BlastCoreBundle::standard_layout.html.twig' %}
 
 {% block body_attributes %}
 
