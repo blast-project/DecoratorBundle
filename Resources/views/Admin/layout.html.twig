@@ -23,6 +23,7 @@ file that was distributed with this source code.
         var AdminLTEOptions = { animationSpeed: 150 };
     </script>
     {{ parent() }}
+    <script type="text/javascript" src="{{ asset('bundles/librinfodecorator/js/main.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/librinfodecorator/js/inline-block.js') }}"></script>
 {% endblock %}
 
@@ -67,3 +68,22 @@ file that was distributed with this source code.
         </a>
     {% endspaceless %}
 {% endblock %}
+
+{% block sonata_page_content %}
+    <section class="content-header">
+        {{ block('sonata_page_content_header') }}
+ 
+        <div id="extra-content">
+            {% block extra_content %}{% endblock %}
+        </div>       
+        
+        <div id="fixed-tabs" class="nav-tabs-custom">
+            {% block tabs %}{% endblock %}
+        </div>
+        
+    </section>
+
+    <section class="content">
+        {{ block('sonata_admin_content') }}
+    </section>
+{% endblock sonata_page_content %}

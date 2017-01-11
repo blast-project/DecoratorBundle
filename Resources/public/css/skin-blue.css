@@ -1,33 +1,38 @@
-.skin-blue .navbar {
+.skin-blue nav {
   background-color: #3c8dbc;
 }
-.skin-blue .navbar .nav a {
+
+.skin-blue nav.navbar-static-top {
+    min-height: 50px;
+}
+
+.skin-blue nav .nav a {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.skin-blue .navbar .nav a.btn-danger{
+.skin-blue nav .nav a.btn-danger{
    color: white;
    background-color: #d9534f;
    border-color: #d43f3a;
 }
 
-.skin-blue .navbar .btn-group > .btn:not(.dropdown-toggle) {
+.skin-blue nav .btn-group > .btn:not(.dropdown-toggle) {
   color: #444;
 }
-.skin-blue .navbar .nav > li > a:hover,
-.skin-blue .navbar .nav > li > a:active,
-.skin-blue .navbar .nav > li > a:focus,
-.skin-blue .navbar .sidebar-toggle:hover,
-.skin-blue .navbar .nav .open > a,
-.skin-blue .navbar .nav .open > a:hover,
-.skin-blue .navbar .nav .open > a:focus {
+.skin-blue nav .nav > li > a:hover,
+.skin-blue nav .nav > li > a:active,
+.skin-blue nav .nav > li > a:focus,
+.skin-blue nav .sidebar-toggle:hover,
+.skin-blue nav .nav .open > a,
+.skin-blue nav .nav .open > a:hover,
+.skin-blue nav .nav .open > a:focus {
   background: rgba(0, 0, 0, 0.1);
   color: #f6f6f6;
 }
-.skin-blue .navbar .navbar-right > .nav {
+.skin-blue nav nav-right > .nav {
   margin-right: 10px;
 }
-.skin-blue .navbar .sidebar-toggle {
+.skin-blue nav .sidebar-toggle {
   color: rgba(255, 255, 255, 0.8);
 }
 /* skin-blue logo */
@@ -131,7 +136,7 @@
 
 .skin-blue .sidebar-form #custom-search-admins { margin-top: 3px; }
 
-.skin-blue .navbar .dropdown-menu > li > a {
+.skin-blue nav .dropdown-menu > li > a {
   color: #444;
 }
 
@@ -206,4 +211,35 @@ ul.dropdown-user {
 
 .sidebar-menu li.active > a > .fa-angle-left {
     transform: rotate(-90deg);
+}
+
+/* Fixed header */
+section.content-header {
+    background-color: #ECF0F5;
+}
+
+section.content-header.stuck {
+    position: fixed;
+    top: 36px;
+    z-index: 5;
+}
+
+section.content-header nav {
+    margin-bottom: 10px;
+}
+
+section.content-header.stuck nav {
+    margin-left: -15px;
+}
+
+section.content-header .nav-tabs-custom {
+    margin-bottom: 0;
+}
+
+section.content {
+    padding-top: 0;
+}
+
+.skin-blue .navbar-right {
+    margin-right: 0;
 }
