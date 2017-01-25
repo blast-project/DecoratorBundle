@@ -1,3 +1,1 @@
-librinfo_decorator_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: LibrinfoDecoratorBundle:Default:index }
+
