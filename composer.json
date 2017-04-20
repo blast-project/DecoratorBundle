@@ -8,13 +8,18 @@
         "sonata-project/doctrine-orm-admin-bundle": "3.x-dev",
         "blast-project/core-bundle": "dev-master"
     },
-    "license":  "GPL-3.0",
-    "keywords": ["e-venement", "libio", "sonata", "symfony"],
+    "license": "GPL-3.0",
+    "keywords": [
+        "e-venement",
+        "libio",
+        "sonata",
+        "symfony"
+    ],
     "homepage": "https://github.com/libre-informatique/SymfonyBlastCoreBundle",
     "authors": [
         {
-           "name": "Baptiste SIMON",
-           "email": "baptiste.simon@libre-informatique.fr"
+            "name": "Baptiste SIMON",
+            "email": "baptiste.simon@libre-informatique.fr"
         },
         {
             "name": "Libre Informatique",
@@ -22,7 +27,10 @@
         }
     ],
     "autoload": {
-        "psr-4": { "Librinfo\\DecoratorBundle\\": "" }
+        "psr-4": {
+            "Librinfo\\DecoratorBundle\\": "src/",
+            "Librinfo\\DecoratorBundle\\Tests\\": "tests/"
+        }
     },
     "suggest": {
         "libre-informatique/crm-bundle": "Manage contacts, organisms and more..."
