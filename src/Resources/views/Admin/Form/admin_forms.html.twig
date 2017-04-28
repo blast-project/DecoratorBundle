@@ -1,14 +1,2 @@
 {% extends 'SonataDoctrineORMAdminBundle:Form:form_admin_fields.html.twig' %}
 
-{% block form_widget -%}
-    {{parent()}}
-    {{dump(_context)}}
-{%- endblock form_widget %}
-    
-{% block checkbox_row -%}
-    {{ block('form_row') }}
-{%- endblock checkbox_row %}
-
-{% block checkbox_label %}
-    {{ block('form_label') }}
-{% endblock checkbox_label %}
