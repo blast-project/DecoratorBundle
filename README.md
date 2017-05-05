@@ -1,5 +1,17 @@
 # SymfonyLibrinfoDecoratorBundle
 
+[![Build Status](https://travis-ci.org/libre-informatique/DecoratorBundle.svg?branch=master)](https://travis-ci.org/libre-informatique/DecoratorBundle)
+[![Coverage Status](https://coveralls.io/repos/github/libre-informatique/DecoratorBundle/badge.svg?branch=master)](https://coveralls.io/github/libre-informatique/DecoratorBundle?branch=master)
+[![License](https://img.shields.io/github/license/libre-informatique/DecoratorBundle.svg?style=flat-square)](./LICENCE.md)
+
+[![Latest Stable Version](https://poser.pugx.org/libre-informatique/decorator-bundle/v/stable)](https://packagist.org/packages/libre-informatique/decorator-bundle)
+[![Latest Unstable Version](https://poser.pugx.org/libre-informatique/decorator-bundle/v/unstable)](https://packagist.org/packages/libre-informatique/decorator-bundle)
+[![Total Downloads](https://poser.pugx.org/libre-informatique/decorator-bundle/downloads)](https://packagist.org/packages/libre-informatique/decorator-bundle)
+
+
+
+
+
 A basic decorator for various projects
 
 ## Installation
