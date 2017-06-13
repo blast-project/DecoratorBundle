@@ -1,6 +1,16 @@
 # Change Log
 
-## [0.4.2](https://github.com/libre-informatique/DecoratorBundle/tree/0.4.2) (2017-04-28)
+## [0.4.3](https://github.com/libre-informatique/DecoratorBundle/tree/0.4.3) (2017-06-13)
+[Full Changelog](https://github.com/libre-informatique/DecoratorBundle/compare/0.4.2...0.4.3)
+
+**Merged pull requests:**
+
+- DevKit updates for DecoratorBundle [\#5](https://github.com/libre-informatique/DecoratorBundle/pull/5) ([BlastCI](https://github.com/BlastCI))
+- DevKit updates for DecoratorBundle [\#4](https://github.com/libre-informatique/DecoratorBundle/pull/4) ([BlastCI](https://github.com/BlastCI))
+- DevKit updates for DecoratorBundle [\#3](https://github.com/libre-informatique/DecoratorBundle/pull/3) ([BlastCI](https://github.com/BlastCI))
+- DevKit updates for DecoratorBundle [\#2](https://github.com/libre-informatique/DecoratorBundle/pull/2) ([BlastCI](https://github.com/BlastCI))
+
+## [0.4.2](https://github.com/libre-informatique/DecoratorBundle/tree/0.4.2) (2017-05-05)
 [Full Changelog](https://github.com/libre-informatique/DecoratorBundle/compare/0.1...0.4.2)
 
 **Merged pull requests:**
