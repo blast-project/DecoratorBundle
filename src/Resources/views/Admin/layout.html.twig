@@ -12,9 +12,15 @@ file that was distributed with this source code.
 
 {% extends 'BlastCoreBundle::standard_layout.html.twig' %}
 
+{% block meta_tags %}
+    {{ parent() }}
+    <link rel="icon" type="image/png" href="{{ asset('bundles/librinfodecorator/li-favicon.png') }}" />
+{% endblock %}
+
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('bundles/librinfodecorator/css/skin-blue.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/librinfodecorator/css/compact-ui.css') }}" />
 {% endblock %}
 
 {% block javascripts %}
@@ -72,15 +78,15 @@ file that was distributed with this source code.
 {% block sonata_page_content %}
     <section class="content-header">
         {{ block('sonata_page_content_header') }}
- 
+
         <div id="extra-content">
             {% block extra_content %}{% endblock %}
-        </div>       
-        
+        </div>
+
         <div id="fixed-tabs" class="nav-tabs-custom">
             {% block tabs %}{% endblock %}
         </div>
-        
+
     </section>
 
     <section class="content">
@@ -89,5 +95,5 @@ file that was distributed with this source code.
 {% endblock sonata_page_content %}
 
 {% block side_bar_after_nav %}
-    
+
 {% endblock side_bar_after_nav %}
