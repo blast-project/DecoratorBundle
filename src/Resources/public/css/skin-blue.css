@@ -273,3 +273,6 @@ section.content {
     border-radius: 0;
     margin-top: 1px;
 }
+.skin-blue .fa.fa-exclamation-circle.has-errors {
+    color: #dd4b39;
+}
