@@ -289,4 +289,21 @@ section.content {
 
 .skin-blue .field-container .form-group {
     padding: 0 0.2em;
+    /*clear: both;*/
+}
+
+.skin-blue .entityCodeGeneratorActions,
+.skin-blue .entityCodeGeneratorActions .entityCodeGeneratorButton {
+    float: left;
+}
+
+.skin-blue a.add-choice {
+    float: left;
+}
+.skin-blue .multiple-checkbox::before {
+    content: '';
+    width:100%;
+}
+.skin-blue .multiple-checkbox + a.add-choice {
+    float: none;
 }
