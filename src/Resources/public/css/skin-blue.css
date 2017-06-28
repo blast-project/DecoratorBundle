@@ -286,3 +286,7 @@ section.content {
     margin : 0 -1px;
     padding: 0.2em 1em;
 }
+
+.skin-blue .field-container .form-group {
+    padding: 0 0.2em;
+}
