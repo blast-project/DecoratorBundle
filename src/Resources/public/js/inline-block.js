@@ -21,7 +21,7 @@ LI.decorator.inline = function () {
 
         LI.decorator.getFormGroup($(this)).css({
             'display': 'inline-block',
-            'margin-right': '10px',
+            // 'margin-right': '10px',
             'width': width + '%',
             'height': height + 'px'
         });
