@@ -295,6 +295,7 @@ section.content {
 .skin-blue .entityCodeGeneratorActions,
 .skin-blue .entityCodeGeneratorActions .entityCodeGeneratorButton {
     float: left;
+    width: 100%;
 }
 
 .skin-blue a.add-choice {
