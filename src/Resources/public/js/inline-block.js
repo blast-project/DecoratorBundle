@@ -8,6 +8,7 @@ $(document).ready(function () {
 
     LI.decorator.inline();
     LI.decorator.newLine();
+    LI.decorator.multipleCheckbox();
 });
 
 // display several sonata form fields on the same line
@@ -20,10 +21,11 @@ LI.decorator.inline = function () {
         var height = widget.attr('height');
 
         LI.decorator.getFormGroup($(this)).css({
-            'display': 'inline-block',
-            'margin-right': '10px',
+            // 'display': 'inline-block',
+            'float': 'left',
             'width': width + '%',
-            'height': height + 'px'
+            'height': height + 'px',
+            'min-height': '90px'
         });
 
         $(this).css('height', height + 'px');
@@ -45,6 +47,15 @@ LI.decorator.newLine = function () {
         });
 
         $(this).css('height', height + 'px');
+    });
+};
+
+LI.decorator.multipleCheckbox = function () {
+
+    $('.multiple-checkbox').each(function () {
+        LI.decorator.getFormGroup($(this)).css({
+            'clear': 'both',
+        });
     });
 };
 

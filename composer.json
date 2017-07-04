@@ -31,8 +31,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Librinfo\\DecoratorBundle\\": "src/",
-            "Librinfo\\DecoratorBundle\\Tests\\": "tests/"
+            "Librinfo\\DecoratorBundle\\": "src/"
         }
     },
     "extra": {

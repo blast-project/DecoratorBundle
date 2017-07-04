@@ -20,7 +20,6 @@ file that was distributed with this source code.
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('bundles/librinfodecorator/css/skin-blue.css') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/librinfodecorator/css/compact-ui.css') }}" />
 {% endblock %}
 
 {% block javascripts %}
@@ -92,6 +91,23 @@ file that was distributed with this source code.
     <section class="content">
         {{ block('sonata_admin_content') }}
     </section>
+
+    <div class="modal fade li-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">&nbsp;</h4>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-right" data-dismiss="modal">{{'read_less'|trans({},'SonataAdminBundle')}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock sonata_page_content %}
 
 {% block side_bar_after_nav %}
