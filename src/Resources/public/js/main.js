@@ -72,9 +72,10 @@ $(document).ready(function(){
             success: function(data, textStatus, request) {
                 if(request.getResponseHeader('Content-Type') === "application/json") {
                     if(data.result == "ok") {
-                        form.closest('.modal').modal('close');
+                        form.closest('.li-modal').modal('hide');
+                        $(document).trigger('li-modal.success');
                     } else {
-                        
+                        $(document).trigger('li-modal.error');
                     }
                 } else {
                     form.replaceWith(data);
