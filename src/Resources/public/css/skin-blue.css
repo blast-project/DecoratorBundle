@@ -308,3 +308,12 @@ section.content {
 .skin-blue .multiple-checkbox + a.add-choice {
     float: none;
 }
+
+.skin-blue .mainPhoneContainer address {
+    margin-bottom:0;
+}
+
+.skin-blue .mainAddressContainer blockquote,
+.skin-blue .mainPhoneContainer blockquote {
+    box-shadow: 0 2px 4px #EEE;
+}
