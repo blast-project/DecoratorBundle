@@ -301,19 +301,38 @@ section.content {
 .skin-blue a.add-choice {
     float: left;
 }
+
 .skin-blue .multiple-checkbox::before {
     content: '';
-    width:100%;
+    width  : 100%;
 }
+
 .skin-blue .multiple-checkbox + a.add-choice {
     float: none;
 }
 
 .skin-blue .mainPhoneContainer address {
-    margin-bottom:0;
+    margin-bottom: 0;
 }
 
 .skin-blue .mainAddressContainer blockquote,
 .skin-blue .mainPhoneContainer blockquote {
     box-shadow: 0 2px 4px #EEE;
+}
+
+.skin-blue .countable-tab span.counter {
+    background-color: #3c8dbc;
+    color           : #FFF;
+    border-radius   : 50%;
+    width           : 1em;
+    height          : 1em;
+    display         : block;
+    text-align      : center;
+    line-height     : 1em;
+    font-weight     : bold;
+    font-size       : 0.9em;
+}
+
+.skin-blue .countable-tab span.counter[data-count="0"] {
+    opacity:0.2;
 }
