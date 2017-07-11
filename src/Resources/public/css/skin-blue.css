@@ -334,5 +334,9 @@ section.content {
 }
 
 .skin-blue .countable-tab span.counter[data-count="0"] {
-    opacity:0.2;
+    opacity: 0.2;
+}
+
+.skin-blue .input-group-addon {
+    width: 0;
 }
