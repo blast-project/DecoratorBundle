@@ -353,3 +353,11 @@ section.content {
     display: inline-block;
     vertical-align: top;
 }
+
+.skin-blue ul.sidebar-menu li a {
+    padding: 0.5em;
+}
+
+.skin-blue ul.sidebar-menu li ul li a {
+    padding: 0.2em 1em;
+}
