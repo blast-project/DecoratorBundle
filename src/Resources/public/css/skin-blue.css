@@ -299,7 +299,6 @@ section.content {
 }
 
 .skin-blue a.add-choice {
-    float: left;
 }
 
 .skin-blue .multiple-checkbox::before {
@@ -308,7 +307,6 @@ section.content {
 }
 
 .skin-blue .multiple-checkbox + a.add-choice {
-    float: none;
 }
 
 .skin-blue .mainPhoneContainer address {
@@ -339,4 +337,19 @@ section.content {
 
 .skin-blue .input-group-addon {
     width: 0;
+}
+
+.skin-blue .sonata-collection-row-without-label div[id^="field_container_"] {
+    position: relative;
+}
+
+.skin-blue .sonata-collection-row-without-label div[id^="field_container_"] span[id^="field_actions_"] {
+    position: absolute;
+    top: -2.65em;
+    right: 0.1em;
+}
+
+.skin-blue .field-as-inline {
+    display: inline-block;
+    vertical-align: top;
 }
