@@ -30,6 +30,8 @@ file that was distributed with this source code.
     {{ parent() }}
     <script type="text/javascript" src="{{ asset('bundles/librinfodecorator/js/main.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/librinfodecorator/js/inline-block.js') }}"></script>
+    <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+    <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script> 
 {% endblock %}
 
 {% block body_attributes %}
@@ -93,7 +95,7 @@ file that was distributed with this source code.
     </section>
 
     <div class="modal fade li-modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" style="width: 90%; height: 85%; padding: 0px;" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>

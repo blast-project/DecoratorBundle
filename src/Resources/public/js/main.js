@@ -49,19 +49,38 @@ $(document).ready(function(){
                 modal.find('.modal-footer button').clone()
             );
 
+            Admin.shared_setup();
+
             modal.find('.modal-footer').hide();
             modal.modal('show');
+        });
+    });
 
-            var modalSelects = modalBody.find('select');
+    $(document).on('submit','.li-modal .modal-body form',function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
 
-            if(modalSelects.length > 0) {
-                $.each(modalSelects,function(i,item) {
-                    if($(item).closest('.sonata-ba-field').find('.select2-container').length == 0) {
-                        $(item).select2({
-                            minimumResultsForSearch: -1
-                        });
+        var form = $(this);
+
+        $.ajax({
+            url: form.attr('action'),
+            data: new FormData(form[0]),
+            method: form.attr('method'),
+            processData: false,
+            contentType: false,
+            success: function(data, textStatus, request) {
+                if(request.getResponseHeader('Content-Type') === "application/json") {
+                    if(data.result == "ok") {
+                        form.closest('.li-modal').modal('hide');
+                        $(document).trigger('li-modal.success');
+                    } else {
+                        $(document).trigger('li-modal.error');
                     }
-                });
+                } else {
+                    form.replaceWith(data);
+                    Admin.shared_setup();
+                }
             }
         });
     });

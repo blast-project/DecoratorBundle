@@ -20,13 +20,9 @@ LI.decorator.inline = function () {
         var width = widget.attr('width');
         var height = widget.attr('height');
 
-        LI.decorator.getFormGroup($(this)).css({
-            // 'display': 'inline-block',
-            'float': 'left',
-            'width': width + '%',
-            'height': height + 'px',
-            'min-height': '90px'
-        });
+        LI.decorator.getFormGroup($(this))
+        .css({'width': width + '%'})
+        .addClass('field-as-inline');
 
         $(this).css('height', height + 'px');
     });
@@ -43,7 +39,7 @@ LI.decorator.newLine = function () {
 
         LI.decorator.getFormGroup($(this)).css({
             'width': width + '%',
-            'height': height + 'px'
+            'height': height + 'px',
         });
 
         $(this).css('height', height + 'px');
