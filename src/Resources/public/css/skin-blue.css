@@ -375,3 +375,23 @@ section.content {
     background: #dd4b39;
     color: white;
 }
+
+.skin-blue .btn.setAsCover {
+    background-color: #3c8dbc;
+    cursor: pointer;
+}
+
+.skin-blue .btn.setAsCover.cover {
+    background-color: #00a65a;
+    cursor: default;
+}
+
+.skin-blue .btn.setAsCover.cover .fa.fa-picture-o,
+.skin-blue .btn.setAsCover .fa.fa-check-circle {
+    display:none;
+}
+
+.skin-blue .btn.setAsCover.cover .fa.fa-check-circle,
+.skin-blue .btn.setAsCover .fa.fa-picture-o {
+    display:inline-block;
+}
