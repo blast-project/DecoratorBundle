@@ -298,16 +298,14 @@ section.content {
     width: 100%;
 }
 
-.skin-blue a.add-choice {
-}
+.skin-blue a.add-choice {}
 
 .skin-blue .multiple-checkbox::before {
     content: '';
     width  : 100%;
 }
 
-.skin-blue .multiple-checkbox + a.add-choice {
-}
+.skin-blue .multiple-checkbox + a.add-choice {}
 
 .skin-blue .mainPhoneContainer address {
     margin-bottom: 0;
@@ -321,14 +319,20 @@ section.content {
 .skin-blue .countable-tab span.counter {
     background-color: #3c8dbc;
     color           : #FFF;
-    border-radius   : 50%;
-    width           : 1em;
+    border-radius   : 5px 0 0 5px;
     height          : 1em;
     display         : block;
     text-align      : center;
     line-height     : 1em;
     font-weight     : bold;
     font-size       : 0.9em;
+    padding         : 0 0.1em 0 0.2em;
+    margin-top      : 0.1em;
+    margin-right    : -0.1em;
+}
+
+.skin-blue .countable-tab:not(.active) span.counter {
+    opacity: 0.5;
 }
 
 .skin-blue .countable-tab span.counter[data-count="0"] {
@@ -345,12 +349,12 @@ section.content {
 
 .skin-blue .sonata-collection-row-without-label div[id^="field_container_"] span[id^="field_actions_"] {
     position: absolute;
-    top: -2.65em;
-    right: 0.1em;
+    top     : -2.65em;
+    right   : 0.1em;
 }
 
 .skin-blue .field-as-inline {
-    display: inline-block;
+    display       : inline-block;
     vertical-align: top;
 }
 
@@ -368,10 +372,38 @@ section.content {
 
 .skin-blue .sonata-ba-action.btn:not(:hover).btn-success {
     background: #00a65a;
-    color: white;
+    color     : white;
 }
 
 .skin-blue .sonata-ba-action.btn:not(:hover).btn-danger {
     background: #dd4b39;
-    color: white;
+    color     : white;
+}
+
+.skin-blue .btn.setAsCover {
+    background-color: #3c8dbc;
+    cursor          : pointer;
+}
+
+.skin-blue .btn.setAsCover.cover {
+    background-color: #00a65a;
+    cursor          : default;
+}
+
+.skin-blue .btn.setAsCover .fa.fa-check-circle,
+.skin-blue .btn.setAsCover.cover .fa.fa-picture-o {
+    display: none;
+}
+
+.skin-blue .btn.setAsCover .fa.fa-picture-o,
+.skin-blue .btn.setAsCover.cover .fa.fa-check-circle {
+    display: inline-block;
+}
+
+.skin-blue tr.sonata-ba-view-container a,
+.skin-blue tr.sonata-ba-view-container th a {
+    background-position: center right;
+    background-repeat  : no-repeat;
+    background-image   : linear-gradient(transparent,transparent),url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%3E%3Cpath%20fill%3D%22%23fff%22%20stroke%3D%22%2306c%22%20d%3D%22M1.5%204.518h5.982V10.5H1.5z%22%2F%3E%3Cpath%20d%3D%22M5.765%201H11v5.39L9.427%207.937l-1.31-1.31L5.393%209.35l-2.69-2.688%202.81-2.808L4.2%202.544z%22%20fill%3D%22%2306f%22%2F%3E%3Cpath%20d%3D%22M9.995%202.004l.022%204.885L8.2%205.07%205.32%207.95%204.09%206.723l2.882-2.88-1.85-1.852z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E);
+    padding-right      : 16px;
 }
