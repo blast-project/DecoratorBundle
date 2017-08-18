@@ -31,7 +31,7 @@ file that was distributed with this source code.
     <script type="text/javascript" src="{{ asset('bundles/librinfodecorator/js/main.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/librinfodecorator/js/inline-block.js') }}"></script>
     <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
-    <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script> 
+    <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
 {% endblock %}
 
 {% block body_attributes %}
@@ -115,3 +115,11 @@ file that was distributed with this source code.
 {% block side_bar_after_nav %}
 
 {% endblock side_bar_after_nav %}
+
+{% block tab_menu_navbar_header %}
+    {% if _navbar_title is not empty %}
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">{{ _navbar_title|raw }}</a>
+        </div>
+    {% endif %}
+{% endblock %}
