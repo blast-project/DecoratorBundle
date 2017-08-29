@@ -31,16 +31,29 @@ LI.decorator.inline = function () {
 // Add line breaks to inline-block fields
 LI.decorator.newLine = function () {
 
-    $('.new-line').each(function () {
+    $('.new-line, .new-line-before, .new-line-after').each(function () {
 
         var widget = LI.decorator.getWidget($(this));
         var width = widget.attr('width');
         var height = widget.attr('height');
+        var widgetClass = '';
 
-        LI.decorator.getFormGroup($(this)).css({
+        var currentFieldWrapper = LI.decorator.getFormGroup($(this));
+
+        if ($(this).hasClass('new-line-before')) {
+            widgetClass = 'new-line-before';
+            currentFieldWrapper.before('<br />');
+        } else if ($(this).hasClass('new-line-after')) {
+            widgetClass = 'new-line-after';
+            currentFieldWrapper.after('<br />');
+        }
+
+        currentFieldWrapper.css({
             'width': width + '%',
             'height': height + 'px',
-        });
+        }).addClass(widgetClass);
+
+
 
         $(this).css('height', height + 'px');
     });

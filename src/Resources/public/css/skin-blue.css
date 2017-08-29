@@ -353,7 +353,9 @@ section.content {
     right   : 0.1em;
 }
 
-.skin-blue .field-as-inline {
+.skin-blue .field-as-inline,
+.skin-blue div.new-line-after,
+.skin-blue div.new-line-before {
     display       : inline-block;
     vertical-align: top;
 }
