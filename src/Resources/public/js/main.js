@@ -1,5 +1,4 @@
-
-$(document).ready(function(){
+$(document).ready(function() {
 
     //destroy the waypoint added by sonata
     Waypoint.destroyAll();
@@ -12,18 +11,17 @@ $(document).ready(function(){
 
     //Moved the tabs to sticky container
     tabs.remove()
-        .appendTo($('#fixed-tabs'))
-    ;
+        .appendTo($('#fixed-tabs'));
 
     //Scroll to top when changing tabs
-    $('a[data-toggle="tab"]').click(function(){
-        window.scrollTo(0,0);
+    $('a[data-toggle="tab"]').click(function() {
+        window.scrollTo(0, 0);
     });
 
     new Waypoint.Sticky({
         element: navBar[0],
-        offset:  30,
-        handler: function( direction ) {
+        offset: 30,
+        handler: function(direction) {
             if (direction == 'up') {
                 navBar.find('nav').width('auto');
                 $('section.content-header').width('auto');
@@ -34,7 +32,7 @@ $(document).ready(function(){
         }
     });
 
-    $(document).on('click','a.openInModal',function(e) {
+    $(document).on('click', 'a.openInModal', function(e) {
         e.preventDefault();
         e.stopPropagation();
         e.stopImmediatePropagation();
@@ -43,7 +41,7 @@ $(document).ready(function(){
         var modal = $('.li-modal.modal');
         var modalBody = modal.find('.modal-body');
 
-        $.get(url,function(html) {
+        $.get(url, function(html) {
             modalBody.html(html);
             modalBody.find('.form-actions').append(
                 modal.find('.modal-footer button').clone()
@@ -56,7 +54,7 @@ $(document).ready(function(){
         });
     });
 
-    $(document).on('submit','.li-modal .modal-body form',function(e) {
+    $(document).on('submit', '.li-modal .modal-body form', function(e) {
         e.preventDefault();
         e.stopPropagation();
         e.stopImmediatePropagation();
@@ -70,8 +68,8 @@ $(document).ready(function(){
             processData: false,
             contentType: false,
             success: function(data, textStatus, request) {
-                if(request.getResponseHeader('Content-Type') === "application/json") {
-                    if(data.result == "ok") {
+                if (request.getResponseHeader('Content-Type') === "application/json") {
+                    if (data.result == "ok") {
                         form.closest('.li-modal').modal('hide');
                         $(document).trigger('li-modal.success');
                     } else {
@@ -85,8 +83,37 @@ $(document).ready(function(){
         });
     });
 
-    $('form').on('sonata.add_element', function(){
+    $('form').on('sonata.add_element', function() {
         initTinyMCE();
     });
 
+});
+
+// Ajax global spinner
+
+var ajaxCallNumber = 0;
+$(document)
+    .ready(function() {
+        $('body').append(
+            '<div class="sk-folding-cube">' +
+            '    <div class="sk-cube1 sk-cube"></div>' +
+            '    <div class="sk-cube2 sk-cube"></div>' +
+            '    <div class="sk-cube4 sk-cube"></div>' +
+            '    <div class="sk-cube3 sk-cube"></div>' +
+            '</div>'
+        );
+    })
+    .on('ajaxStart', function() {
+        ajaxCallNumber++;
+        $('.sk-folding-cube').show();
+    })
+    .on('ajaxStop', function() {
+        if (--ajaxCallNumber == 0) {
+            $('.sk-folding-cube').hide();
+        }
+    });
+jQuery(window).on('error', function(e) {
+    if (ajaxCallNumber > 0) {
+        $('.sk-folding-cube').hide();
+    }
 });
