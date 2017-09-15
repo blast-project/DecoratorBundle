@@ -415,3 +415,11 @@ section.content {
     text-align: right;
     min-width : 250px;
 }
+
+.skin-blue nav .filterList .dropdown-menu > li.selectedFilter,
+.skin-blue nav .filterList .dropdown-menu > li.selectedFilter > a,
+.skin-blue nav .filterList .dropdown-menu > li.selectedFilter > a:hover,
+.skin-blue nav .filterList .dropdown-menu > li.selectedFilter:hover {
+    background-color: #3C8DBC;
+    color           : #F1F5FA;
+}
