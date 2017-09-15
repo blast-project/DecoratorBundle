@@ -90,8 +90,8 @@ $(document).ready(function() {
 });
 
 // Ajax global spinner
-
 var ajaxCallNumber = 0;
+
 $(document)
     .ready(function() {
         $('body').append(
@@ -112,6 +112,7 @@ $(document)
             $('.sk-folding-cube').hide();
         }
     });
+
 jQuery(window).on('error', function(e) {
     if (ajaxCallNumber > 0) {
         $('.sk-folding-cube').hide();
