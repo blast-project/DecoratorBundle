@@ -51,6 +51,9 @@ $(document).ready(function() {
 
             modal.find('.modal-footer').hide();
             modal.modal('show');
+            LI.decorator.inline();
+            LI.decorator.newLine();
+            LI.decorator.multipleCheckbox();
         });
     });
 
