@@ -35,12 +35,7 @@
             "Librinfo\\DecoratorBundle\\": "src/"
         }
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.4.x-dev",
-            "dev-wip-lisem": "0.4.x-dev"
-        }
-    },
+    "version": "dev-wip-lisem",
     "suggest": {
         "libre-informatique/crm-bundle": "Manage contacts, organisms and more..."
     }

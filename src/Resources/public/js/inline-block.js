@@ -1,10 +1,9 @@
-
 if (LI === undefined)
     var LI = {};
 if (LI.decorator === undefined)
     LI.decorator = [];
 
-$(document).ready(function () {
+$(document).ready(function() {
 
     LI.decorator.inline();
     LI.decorator.newLine();
@@ -12,32 +11,31 @@ $(document).ready(function () {
 });
 
 // display several sonata form fields on the same line
-LI.decorator.inline = function () {
+LI.decorator.inline = function() {
 
-    $('.inline-block').each(function () {
+    $('.inline-block').each(function() {
 
         var widget = LI.decorator.getWidget($(this));
         var width = widget.attr('width');
         var height = widget.attr('height');
 
         LI.decorator.getFormGroup($(this))
-        .css({'width': width + '%'})
-        .addClass('field-as-inline');
+            .css({ 'width': width + '%' })
+            .addClass('field-as-inline');
 
         $(this).css('height', height + 'px');
     });
 };
 
 // Add line breaks to inline-block fields
-LI.decorator.newLine = function () {
+LI.decorator.newLine = function() {
 
-    $('.new-line, .new-line-before, .new-line-after').each(function () {
+    $('.new-line, .new-line-before, .new-line-after').each(function() {
 
         var widget = LI.decorator.getWidget($(this));
         var width = widget.attr('width');
         var height = widget.attr('height');
         var widgetClass = '';
-
         var currentFieldWrapper = LI.decorator.getFormGroup($(this));
 
         if ($(this).hasClass('new-line-before')) {
@@ -53,15 +51,13 @@ LI.decorator.newLine = function () {
             'height': height + 'px',
         }).addClass(widgetClass);
 
-
-
         $(this).css('height', height + 'px');
     });
 };
 
-LI.decorator.multipleCheckbox = function () {
+LI.decorator.multipleCheckbox = function() {
 
-    $('.multiple-checkbox').each(function () {
+    $('.multiple-checkbox').each(function() {
         LI.decorator.getFormGroup($(this)).css({
             'clear': 'both',
         });
@@ -69,9 +65,9 @@ LI.decorator.multipleCheckbox = function () {
 };
 
 //check if the field as one or two level form group parent
-LI.decorator.getFormGroup = function (field) {
+LI.decorator.getFormGroup = function(field) {
 
-    var formGroup = field.closest('div.form-group').parent().closest('div.form-group');
+    var formGroup = field.closest('div.form-group').parent(':not(.nested-form)').closest('div.form-group');
 
     if (formGroup.length === 0) {
 
@@ -82,7 +78,7 @@ LI.decorator.getFormGroup = function (field) {
 };
 
 //check what type of widget is being dealt with
-LI.decorator.getWidget = function (field) {
+LI.decorator.getWidget = function(field) {
 
     if (field.siblings('select') > 0) {
 
