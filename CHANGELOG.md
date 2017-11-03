@@ -1,5 +1,14 @@
 # Change Log
 
+## [0.6.4](https://github.com/libre-informatique/DecoratorBundle/tree/0.6.4) (2017-11-03)
+[Full Changelog](https://github.com/libre-informatique/DecoratorBundle/compare/0.5.2...0.6.4)
+
+**Merged pull requests:**
+
+- DevKit updates for DecoratorBundle [\#22](https://github.com/libre-informatique/DecoratorBundle/pull/22) ([BlastCI](https://github.com/BlastCI))
+- Lisem fix & features [\#20](https://github.com/libre-informatique/DecoratorBundle/pull/20) ([FanchTheSystem](https://github.com/FanchTheSystem))
+- DevKit updates for DecoratorBundle [\#19](https://github.com/libre-informatique/DecoratorBundle/pull/19) ([BlastCI](https://github.com/BlastCI))
+
 ## [0.5.2](https://github.com/libre-informatique/DecoratorBundle/tree/0.5.2) (2017-10-19)
 [Full Changelog](https://github.com/libre-informatique/DecoratorBundle/compare/0.5.1...0.5.2)
 
