@@ -10,10 +10,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Librinfo\DecoratorBundle;
+namespace Blast\Bundle\DecoratorBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class LibrinfoDecoratorBundle extends Bundle
+class BlastDecoratorBundle extends Bundle
 {
 }
